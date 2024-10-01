@@ -1,0 +1,145 @@
+/* Main Banner Section */
+.hero-banner {
+  text-align: center;
+  padding: 5px 20px;
+  background-color: #f7f7f7; /* Existing color */
+}
+
+.hero-banner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Full Screen Header */
+.full-screen-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh; /* Full viewport height */
+  background-color: #f8f1e5; /* Optional background color */
+}
+
+.full-screen-header h2 {
+  color: #e8765d;
+  text-transform: uppercase;
+  font-size: 48px; /* Adjust size as needed */
+  text-align: center;
+  margin: 0; /* Remove margin for full screen effect */
+  animation: pulse 3s infinite; /* Apply the pulsing animation */
+}
+
+/* Background Color for Sections */
+.who_are_we {
+  background-color: #f3e6ff; /* Background color for the section */
+  padding: 20px; /* Optional padding for better spacing */
+}
+
+/* Content Section */
+.content-section {
+  background-color: #f8f1e5; /* Inner content section background */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.text-content {
+  flex: 1; /* Allow it to grow */
+  min-width: 300px; /* Minimum width for smaller screens */
+}
+
+.text-content h1 {
+  color: #4a2c6b;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Image Gallery */
+.photo-gallery {
+  flex: 1; /* Allow it to grow */
+  min-width: 300px; /* Minimum width for smaller screens */
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images */
+}
+
+.photo {
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Space between images */
+}
+
+.photo img {
+  width: 75%; /* Full width for responsive images */
+  border-radius: 10px;
+}
+
+/* Global Styles */
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .content-section {
+      flex-direction: column; /* Stack the sections */
+  }
+
+  .text-content,
+  .photo-gallery {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Space between sections */
+  }
+
+  .text-content h1 {
+      font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  .text-content p {
+      font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .photo {
+      width: 100%; /* Full width for images */
+  }
+
+  .photo img {
+      width: 100%; /* Ensure images are responsive */
+  }
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+      opacity: 1;
+      transform: scale(1); /* Original size */
+      color: #800080; /* Initial color (Purple) */
+  }
+  25% {
+      opacity: 0.7; /* Reduced opacity */
+      transform: scale(1.05); /* Slightly larger */
+      color: #ff4500; /* Change to Orange-Red */
+  }
+  50% {
+      opacity: 0.5; /* More reduction in opacity */
+      transform: scale(1.1); /* Slightly larger */
+      color: #ffd700; /* Change to Gold */
+  }
+  75% {
+      opacity: 0.7; /* Increase opacity slightly */
+      transform: scale(1.05); /* Slightly smaller */
+      color: #00bfff; /* Change to Deep Sky Blue */
+  }
+  100% {
+      opacity: 1; /* Full opacity */
+      transform: scale(1); /* Return to original size */
+      color: #800080; /* Return to initial color (Purple) */
+  }
+}

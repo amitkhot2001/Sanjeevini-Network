@@ -1,0 +1,42 @@
+.snpp-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px; /* Padding around the entire gallery */
+  background-color: #FFFFE0; /* Light grey background */
+}
+
+.snpp-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  padding: 10px; /* Padding around each row */
+}
+
+.snpp-column {
+  flex: 1 1 24%; /* 4 images per row */
+  padding: 5px;
+}
+
+.snpp-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px; /* Curved corners */
+}
+
+@media screen and (max-width: 768px) {
+  .snpp-column {
+      flex: 1 1 48%; /* 2 images per row on tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .snpp-column {
+      flex: 1 1 100%; /* 1 image per row on mobile */
+  }
+}

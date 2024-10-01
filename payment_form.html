@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjeevini HIV/AIDS Sonkitha Vekthigala Sangha, Davanagere - Donation Form</title>
+  <link rel="stylesheet" href="payment.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    function updateButton() {
+      const amountInput = document.getElementById('amount');
+      const donateButton = document.getElementById('donate-button');
+      const amount = amountInput.value;
+
+      if (amount) {
+        donateButton.textContent = `Donate ₹${amount}`;
+      } else {
+        donateButton.textContent = 'Donate Now';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="logo">
+        <img src="Images/logo/sanjeevini-logo.svg" alt="Sanjeevini logo">
+      </div>
+      <h1>Sanjeevini HIV/AIDS Sonkitha Vekthigala Sangha, Davanagere</h1>
+      <p class="subtitle">Making a Difference Together</p>
+      <div class="contact">
+        <p><strong>Contact Us:</strong></p>
+        <p>Email: <a href="mailto:info@sanjeevini-cbo.org">info@sanjeevini-cbo.org</a></p>
+        <p>Phone: <a href="tel:+919902098147">+91 9902098147</a></p>
+      </div>
+      <div class="terms">
+        <p><strong>Terms & Conditions:</strong></p>
+        <p>You agree to share information entered on this page with Sanjeevini HIV/AIDS Sonkitha Vekthigala Sangha,
+          Davanagere (owner of this page) and Phone Pe Pvt Ltd, adhering to applicable laws.</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <h2>Payment Details</h2>
+      <form>
+        <div class="input-group">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="₹Enter Amount" required oninput="updateButton()">
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="Phone" required>
+        </div>
+        <button type="submit" id="donate-button">Donate Now</button>
+      </form>
+      <div class="payment-options">
+        <div class="payment-method">
+          <img src="https://cdn.razorpay.com/static/assets/pay_methods_branding.png" alt="Payment Methods">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

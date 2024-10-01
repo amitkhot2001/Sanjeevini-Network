@@ -1,0 +1,85 @@
+.team-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.team-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+  gap: 30px; /* Gap between items */
+  justify-content: center;
+  max-width: 1200px; /* Optional: set a maximum width for the container */
+  margin: 0 auto; /* Center the grid on the page */
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for prominence */
+  padding: 30px; /* Increase padding */
+  max-width: 100%; /* Ensure team members take full width of the grid column */
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 160px; /* Increase image size */
+  height: 160px;
+  object-fit: cover;
+  object-position: top; /* Adjust the image position */
+  margin-bottom: 20px; /* Increase margin for spacing */
+}
+
+
+.team-member h3 {
+  font-size: 26px; /* Increase font size */
+  color: #333;
+  margin-bottom: 15px; /* Increase margin */
+}
+
+.team-member .title {
+  font-size: 18px; /* Increase font size */
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.team-member a {
+  font-size: 16px; /* Increase font size */
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 20px; /* Increase margin */
+  display: block;
+}
+
+.team-member a:hover {
+  text-decoration: underline;
+}
+
+.team-member .description {
+  font-size: 16px; /* Increase font size */
+  color: #777;
+  margin-bottom: 25px; /* Increase margin for spacing */
+}
+
+.team-member .read-more {
+  font-size: 16px; /* Increase font size */
+  color: #007bff;
+  text-decoration: none;
+}
+
+.team-member .read-more:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: 1fr; /* Stack team members on smaller screens */
+  }
+}

@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px; /* Adds space between the two divs */
+  max-width: 1200px; /* Set a max-width for the main container */
+  margin: 0 auto; /* Center the container */
+}
+
+.image-div {
+  width: 50%; /* Half of the container */
+  background-color: #87CEEB; /* Optional background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-div img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.info-div {
+  width: 50%; /* Half of the container */
+  background-color: #e0f7ff; /* Optional background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info-div h2 {
+  color: #007acc;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info-div p {
+  line-height: 1.8; /* Better readability */
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Background Color for the whole section */
+.hospita-img-section {
+  background-color: #e0f7e0; /* Change this to your desired color */
+  padding: 20px; /* Optional padding for the section */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacks the divs on smaller screens */
+    align-items: center;
+  }
+
+  .image-div, .info-div {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+}

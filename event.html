@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sanjeevini HIV AIDS sonkitha vekthigala sanga davangere</title>
+  <link rel="stylesheet" href="styl.css">
+  <link rel="stylesheet" href="styel2.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="style5.css">
+  <link rel="stylesheet" href="style6.css">
+  <link rel="stylesheet" href="style7.css">
+  <link rel="stylesheet" href="event.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-wrapper">
+      <div class="header-top">
+        <div class="contact-info">
+          <p class="phone">Call us: <a href="tel:+919902098147">+91 9902098147</a></p>
+          <p class="email">Email: <a href="mailto:info@sanjeevini-cbo.org">info@sanjeevini-cbo.org</a></p>
+        </div>
+        <a href="download_rec.html"><button class="download-receipt">Download Receipt</a> </button>
+      </div>
+
+      <div class="logo-and-menu">
+        <div class="logo-menu-donate">
+          <img src="Images/logo/sanjeevini-logo.svg" alt="Sanjeevini Logo" class="logo">
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="what_we_do.html">What We Do</a></li>
+              <li><a href="gallary.html">Gallery</a></li>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="our_team.html">Our Team</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <a href="payment_form.html"><button class="donate">Donate Now</button></a>
+          <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <div class="menu-popup" id="menu-popup">
+    <div class="popup-content">
+      <button class="close-popup" id="close-popup">×</button>
+      <h2>Menu</h2>
+      <nav id="popup-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="what_we_do.html">What We Do</a></li>
+          <li><a href="gallary.html">Gallery</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="our_team.html">Our Team</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="events-section" aria-labelledby="events-section-title">
+    <h2 id="events-section-title" class="sr-only">Events Section</h2>
+
+    <!-- Search and Event List Section -->
+    <div class="event-header">
+      <input type="text" placeholder="Search for events" class="event-search-bar" aria-label="Search for events">
+      <input type="date" class="event-date-input" aria-label="Select event date">
+      <button class="event-find-btn" aria-label="Find Events">Find Events</button>
+    </div>
+
+    <div class="event-calendar">
+      <button class="event-calendar-nav" aria-label="View today's events">Today</button>
+      <select class="event-upcoming-dropdown" aria-label="Select upcoming events">
+        <option value="upcoming">Upcoming</option>
+      </select>
+    </div>
+
+    <div class="event-no-events" role="alert">
+      There are no upcoming events.
+    </div>
+
+    <!-- Past Events Section -->
+    <div class="event-past-events">
+      <h2 class="event-past-title">Latest Past Events</h2>
+      <ul class="event-list">
+        <li class="event-item">Past Event 1 - 2024-09-01</li>
+        <li class="event-item">Past Event 2 - 2024-09-10</li>
+        <li class="event-item">Past Event 3 - 2024-09-15</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>INFORMATION</h3>
+        <p>#2774/1 Mcc B Block 3rd main 2nd cross Near Surabhi hospital Davanagere 577004,<br>
+          Sanjeevini HIV/AIDS Sonkitha Vekthigala Sangha, Davanagere</p>
+        <p>Phone: <a href="tel:+919902098147">+91 9902098147</a></p>
+        <p>Email: <a href="mailto:info@sanjeevini-cbo.org">info@sanjeevini-cbo.org</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="payment_form.html">Donate Now</a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="#">Privacy and policies</a></li>
+          <li><a href="#">Refund policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Sanjeevini HIV AIDS Sonkitha Vekthigala Sangha</h3>
+        <ul>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="#">Our Objectives</a></li>
+          <li><a href="gallary.html">Gallery</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+<script>
+  document.querySelector('.event-find-btn').addEventListener('click', function () {
+    const searchQuery = document.querySelector('.event-search-bar').value.toLowerCase();
+    const selectedDate = document.querySelector('.event-date-input').value;
+    const eventItems = document.querySelectorAll('.event-item');
+    let eventsFound = false;
+
+    eventItems.forEach(item => {
+      const itemText = item.textContent.toLowerCase();
+      const eventDate = itemText.split(' - ')[1]; // Assuming date is at the end of the text
+
+      if ((searchQuery && itemText.includes(searchQuery)) || (selectedDate && eventDate === selectedDate)) {
+        item.style.display = 'block'; // Show the item if it matches
+        eventsFound = true;
+      } else {
+        item.style.display = 'none'; // Hide the item if it doesn't match
+      }
+    });
+
+    // Update the no-events message based on search results
+    const noEventsMessage = document.querySelector('.event-no-events');
+    noEventsMessage.style.display = eventsFound ? 'none' : 'block';
+  });
+
+</script>
+
+<script>
+  document.getElementById("hamburger").addEventListener("click", function () {
+    const menuPopup = document.getElementById("menu-popup");
+    menuPopup.classList.toggle("show");
+  });
+
+  document.getElementById("close-popup").addEventListener("click", function () {
+    document.getElementById("menu-popup").classList.remove("show");
+  });
+</script>
+
+</html>

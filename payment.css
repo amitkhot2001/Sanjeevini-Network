@@ -1,0 +1,182 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f4f6;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+  background: linear-gradient(135deg, #0077b6, #0096c7);
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-section .logo img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: 10px 0 30px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.contact p,
+.terms p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact a {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Right Section Styling */
+.right-section {
+  padding: 50px;
+  background-color: #f9fbfc;
+}
+
+.right-section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #003f63;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+}
+
+form input {
+  padding: 12px 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+form button {
+  padding: 15px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #005f8d;
+}
+
+/* Payment Options Styling */
+.payment-options {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.payment-method img {
+  width: 80%; /* Adjust size for better visibility */
+  max-width: 300px; /* Ensure it doesn’t get too large */
+  height: auto;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 40%;
+    padding: 40px;
+  }
+
+  .right-section {
+    width: 60%;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .left-section, .right-section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .right-section h2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,87 @@
+footer {
+  background-color: #4B286D; /* Purple background */
+  color: #FFFFFF; /* White text color */
+  padding: 20px 0;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Allows wrapping */
+}
+
+.footer-column {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px; /* Ensures columns don't get too narrow */
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #FFFFFF; /* White link color */
+}
+
+.footer-column ul li a:hover {
+  color: #FF715E; /* Hover color: red tone */
+}
+
+.footer-column p,
+.footer-column a {
+  color: #FFFFFF; /* Text and link color */
+}
+
+.footer-column a {
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #FF715E; /* Hover effect: red tone */
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: flex-start; /* Aligns items to the start of the column */
+      padding: 0 10px;
+  }
+  
+  .footer-column {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Adds space between columns */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+      text-align: center; /* Center text on very small screens */
+      padding: 15px 0; /* Reduce padding */
+  }
+
+  .footer-column {
+      padding: 10px 0;
+      text-align: center; /* Center content in columns */
+  }
+
+  .footer-column h3 {
+      font-size: 1.1em; /* Slightly smaller font size */
+  }
+}

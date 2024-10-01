@@ -1,0 +1,390 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header Section */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8f5e9;
+  padding: 10px 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.phone {
+  color: #ff5722;
+  margin-right: 50px; /* Add space between phone and email */
+}
+
+.email {
+  color: #ff5722;
+}
+
+.download-receipt {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-receipt:hover {
+  background-color: #732d91;
+}
+
+/* Align logo, menu, donate, and hamburger menu */
+.logo-and-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4B286D
+}
+
+.logo-menu-donate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Navigation menu */
+#menu ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+#menu ul li {
+  margin: 0 10px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.3s;
+}
+
+#menu ul li a:hover {
+  color: #FF5F15; /* Change hover color */
+  transform: scale(1.1); /* Slight scale effect */
+}
+
+.donate {
+  background-color: #FF5F15;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #8e44ad;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.donate:hover {
+  background-color: rgba(142, 68, 173, 0.1);
+}
+
+/* Contribute Now Button */
+.contribute-button {
+  background-color: #FF5F15; /* Same as Donate Now button */
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #8e44ad;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Add transition for smooth effect */
+}
+
+.contribute-button:hover {
+  background-color: rgba(142, 68, 173, 0.1); /* Change on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.hamburger span {
+  background-color: #000; /* Set hamburger lines to black */
+  height: 3px;
+  width: 100%;
+  display: block;
+}
+
+/* Header Banner Section */
+
+
+.image-text-container1 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-text {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* WhatsApp Button */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.whatsapp-icon img {
+  width: 60px; /* Increase size for better visibility */
+  height: 60px; /* Increase size for better visibility */
+  border-radius: 50%;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  .whatsapp-icon {
+    bottom: 15px; /* Adjust the position if needed */
+    right: 15px; /* Adjust the position if needed */
+  }
+
+  .whatsapp-icon img {
+    width: 50px; /* Adjust size for smaller screens */
+    height: 50px; /* Adjust size for smaller screens */
+  }
+}
+
+/* Popup Menu */
+.menu-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark backdrop */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears on top */
+  opacity: 0; /* Start hidden */
+  transform: translateY(-20px); /* Move up slightly */
+  transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+}
+
+.menu-popup.show {
+  display: flex; /* Show popup */
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.popup-content {
+  background: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%); /* Soft gradient */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+  text-align: center;
+  width: 350px; /* Increased width for better usability */
+  position: relative; /* For absolute positioning of close button */
+}
+
+.close-popup {
+  background-color: transparent; /* Transparent button */
+  color: #ff5722; /* Color for close button */
+  border: none;
+  font-size: 28px; /* Bigger font for close button */
+  cursor: pointer;
+  position: absolute; /* Position it in the corner */
+  top: 10px; 
+  right: 15px;
+}
+
+h2 {
+  margin-bottom: 20px; /* Space below heading */
+  color: #333; /* Dark color for heading */
+  font-family: 'Arial', sans-serif; /* Consistent font */
+  font-size: 24px; /* Larger heading */
+}
+
+nav {
+  margin-top: 20px; /* Space between close button and menu */
+}
+
+#popup-menu ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+
+#popup-menu ul li {
+  margin: 15px 0; /* Space between menu items */
+}
+
+#popup-menu ul li a {
+  text-decoration: none;
+  color: #007BFF; /* Primary color */
+  padding: 10px;
+  border-radius: 5px;
+  display: block; /* Make the entire area clickable */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transition for background */
+}
+
+#popup-menu ul li a:hover {
+  background-color: #007BFF; /* Background color on hover */
+  color: white; /* Change text color on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Mobile-specific CSS */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active + #menu ul {
+    display: flex;
+  }
+
+ 
+
+  .image-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .phone, .email {
+    font-size: 14px;
+  }
+
+  .donate, .contribute-button {
+    padding: 8px 15px;
+  }
+
+
+  .image-text {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-banner {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height according to your image size */
+  overflow: hidden; /* Hide overflow to maintain clean edges */
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%; /* Ensure the images fill the container */
+  opacity: 0; /* Hide all images initially */
+  position: absolute; /* Position images on top of each other */
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+.slides img.active {
+  opacity: 1; /* Show the active image */
+}
+
+.slides img:first-child {
+  opacity: 1; /* First image visible by default */
+}
+
+.image-text-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white; /* Adjust text color */
+  z-index: 10; /* Ensure it appears above images */
+}
+
+.contribute-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button color */
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contribute-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+

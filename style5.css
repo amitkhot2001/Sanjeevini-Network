@@ -1,0 +1,71 @@
+/* Programs Section */
+.program1-section {
+  padding: 50px 20px;
+  background-color: #ffccbc;
+}
+
+.program1-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.program1-section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #36a1e0; /* Color matching "Our Programs" in your screenshot */
+  margin-bottom: 40px;
+}
+
+.program1-programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.program1-program-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  flex: 1 1 calc(33.33% - 20px); /* Three columns with gaps */
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+.program1-program-item img {
+  width: 100%;
+  height: auto;
+}
+
+.program1-program-item h3 {
+  font-size: 24px;
+  color: #333;
+  padding: 20px 15px 0;
+}
+
+.program1-program-item p {
+  padding: 0 15px 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+  .program1-program-item {
+      flex: 1 1 calc(50% - 20px); /* Two columns on tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .program1-program-item {
+      flex: 1 1 100%; /* One column on mobile */
+  }
+
+  .program1-section-title {
+      font-size: 28px;
+  }
+}

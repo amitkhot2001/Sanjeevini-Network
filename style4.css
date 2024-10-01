@@ -1,0 +1,83 @@
+/* Card Section Styles */
+.card-section {
+  padding: 20px;
+  background-color: #F5F5DC;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.card-item {
+  text-align: center;
+  flex: 1;
+  margin: 10px; /* Margin adjusted for spacing on smaller screens */
+  min-width: 250px; /* Ensures card doesn't get too small */
+}
+
+.card-icon-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #5c47c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.card-icon-container i {
+  font-size: 60px;
+}
+
+.card-title {
+  color: #362f6f;
+  margin: 10px 0;
+}
+
+.card-description {
+  color: #676767;
+  font-size: 14px;
+}
+
+.card-icon-orange {
+  background-color: #f28867;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stacks the cards vertically */
+    align-items: center; /* Centers the cards horizontally */
+  }
+
+  .card-item {
+    margin-bottom: 20px; /* Add space between stacked cards */
+  }
+}
+
+/* Responsive Design for Extra Small Screens */
+@media screen and (max-width: 480px) {
+  .card-icon-container {
+    width: 90px; /* Smaller icons */
+    height: 90px;
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .card-title {
+    font-size: 18px; /* Adjust title size */
+  }
+
+  .card-description {
+    font-size: 12px; /* Adjust description size */
+  }
+}

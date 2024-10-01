@@ -1,0 +1,237 @@
+
+.about-section {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+.about-title {
+  text-align: center; /* Centers the text */
+  margin-bottom: 30px; /* Adds space below the title */
+}
+
+.about-title p {
+  font-size: 48px; /* Adjust the font size as needed */
+  color: #1f2b6c; /* Optional: Change the text color */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+@media (max-width: 768px) {
+  .about-title p {
+    font-size: 36px; /* Smaller font size for mobile */
+  }
+}
+
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-video-container {
+  flex: 1 1 40%;
+  margin-right: 20px;
+}
+
+.about-video-placeholder img {
+  width: 100%;
+  height: auto;
+}
+
+.about-content-container {
+  flex: 1 1 50%;
+}
+
+.about-content-container h1 {
+  color: #1f2b6c;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.about-content-container h4 {
+  color: #6c757d;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.about-content-container p {
+  color: #6c757d;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+  }
+
+  .about-video-container, 
+  .about-content-container {
+      flex: 1 1 100%;
+      margin: 0;
+  }
+
+  .about-content-container h1 {
+      font-size: 28px;
+  }
+}
+
+
+
+
+
+.about-banner {
+  background-image: url('Images/about_us/poor child.jpg'); /* Replace this with the actual image URL */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Reduced height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-banner-overlay {
+  background-color: rgba(0, 34, 85, 0.7); /* Dark blue overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-banner-content {
+  text-align: center;
+  color: white;
+}
+
+.about-banner h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about-banner-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffeb3b; /* Yellow button */
+  color: #1f2b6c;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-banner-btn:hover {
+  background-color: #ffd600;
+  color: #1f2b6c;
+}
+
+@media (max-width: 768px) {
+  .about-banner h1 {
+      font-size: 28px;
+  }
+  
+  .about-banner {
+      height: 250px; /* Adjust the height for smaller screens as well */
+  }
+}
+
+
+
+
+
+
+.about-end-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.about-end-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-end-left {
+  width: 60%;
+}
+
+.about-end-left h2 {
+  font-size: 28px;
+  color: #1f2b6c;
+  font-weight: bold;
+}
+
+.about-end-description {
+  font-size: 16px;
+  color: #1f2b6c;
+  margin-bottom: 20px;
+}
+
+.about-end-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-end-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.about-end-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffeb3b;
+  border-radius: 50%; /* Makes the container a perfect circle */
+  overflow: hidden; /* Ensure any overflow content is hidden */
+}
+
+.about-end-icon .material-icons {
+  font-size: 24px;
+  color: #1f2b6c;
+  line-height: 50px; /* Center the icon vertically */
+}
+
+.about-end-info h3 {
+  font-size: 20px;
+  color: #1f2b6c;
+  font-weight: bold;
+}
+
+.about-end-info p {
+  font-size: 14px;
+  color: #1f2b6c;
+
+}
+
+.about-end-right {
+  width: 35%;
+}
+
+.about-end-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .about-end-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-end-left, .about-end-right {
+    width: 100%;
+  }
+
+  .about-end-cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
